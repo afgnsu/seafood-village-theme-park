@@ -2,7 +2,7 @@
   <h1>註冊頁面</h1>
 
   <div class="row">
-    <%= form_for @user, url: url_for(controller: 'users', action: 'sign_up') do |f| %>
+    <%= form_for @user, url: url_for(controller: 'users', action: 'sign_up_submit') do |f| %>
       <%= f.label :name %>
       <%= f.text_field :name %>
 
