@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Attractions</h1>
+  <table class="table">
+    <thead>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td>Details</td>
+      </tr>
+
+      <% @attractions.each do |attraction| %>
+        <tr>
+          <td><%= attraction.name %></td>
+          <td><%= link_to "Go on #{attraction.name}" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

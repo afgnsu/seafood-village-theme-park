@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   # see http://guides.rubyonrails.org/routing.html
   get "/park/sign_up", to: "users#sign_up"
   post "/park", to: "users#sign_up_submit"
+  
+  root 'attractions#index'
+  resources :attractions, only: [:index]
 end
