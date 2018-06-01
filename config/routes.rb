@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   
   root 'attractions#index'
   resources :attractions, only: [:index]
+  
+  resource :sessions, only: [:new, :create, :destroy]
 end
