@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <%= render partial: "layouts/navbar" %>
     <p><%= alert %></p>
     <%= current_user.name %>
     <%= yield %>
