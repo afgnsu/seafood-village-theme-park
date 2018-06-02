@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   post "/signup", to: "users#sign_up"
   
   root 'attractions#index'
-  resources :attractions, only: [:index]
+  resources :attractions, only: [:index, :show]
   
   # resource :sessions, only: [:new, :create, :destroy]
   get    "/login",  to: "sessions#new"
