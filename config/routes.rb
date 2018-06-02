@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   
   root 'attractions#index'
   resources :attractions, only: [:index, :show] do
-    # resources :rides, only: [:create]
     member do
       post :ride
     end
