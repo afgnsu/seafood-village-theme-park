@@ -1,11 +1,21 @@
 class RidesController < ApplicationController
   
   def xyz
-    @ride = Ride.create(
-      user_id: params[:user_id],
-      attraction_id: params[:attraction_id])
+    @attraction = Attraction.find(params[:attraction_id])
     
-    redirect_to root_path
+    @ride = @attraction.rides.build
+    @ride.user = current_user
+    
+    message = @ride.take_ride
+    
+    if @ride.take_ride?
+      @attraction.rides.create!(user: current_user)
+      flash[:alert] = message
+      redirect_to root_path
+    else
+      flash[:alert] = message
+      redirect_to attraction_path(@attraction.id)
+    end
   end
   
 end
