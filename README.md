@@ -1,25 +1,16 @@
-# README
+# 西湖主題遊樂園
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* 老司機
 
-Things you may want to cover:
+* 很想上車
 
-* Ruby version
+* 笑倣飛雞
 
-* System dependencies
+* 戀愛巴士
 
-* Configuration
+* 帶你飛上天
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* 小王很怒變戰神
 
 * RollerCoaster Tycoon
 
