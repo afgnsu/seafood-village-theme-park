@@ -18,4 +18,6 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#destroy"
   
   post "/rides/xyz", to: "rides#xyz"
+  
+  resources :users, only: [:show]
 end
