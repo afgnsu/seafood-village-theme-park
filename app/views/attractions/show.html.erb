@@ -14,7 +14,7 @@
       <p>刺激度：<%= @attraction.nausea_rating %></p>
       <p>快樂度：<%= @attraction.happiness_rating %></p>
       <br>
-      <%= link_to "乘坐", "#", class: "btn btn-info" %>
+      <%= link_to "乘坐", ride_attraction_path(@attraction), class: "btn btn-info", method: :post %>
       <br>
       <br>
       <form action="/rides/xyz" method="post">
